@@ -1,0 +1,89 @@
+img {
+  max-width: 70px;
+  max-height: 35px;
+  margin-left: 47.7%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.game-field {
+  align-content: center;
+  margin-top: 0px;
+  margin-left: 404px;
+  position: relative;
+}
+
+.game-button {
+  margin: 10px;
+  height: 500px;
+  width: 350px;
+  border: none;
+  border-radius: 10px;
+  background-color: #922FD4;
+  color: white;
+  font: 30px normal;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+}
+.game-button:hover {
+  background-color: #CD0276;
+  color: black;
+  font: 40px bold;
+  box-shadow: 0 0 40px 10px black;
+}
+
+br {
+  margin-bottom: 70px;
+}
+
+.challenge-card {
+  margin-top: 80px;
+  margin-left: 650px;
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px black;
+  text-align: center;
+}
+.challenge-card:hover {
+  box-shadow: 0 0 25px 2px black;
+}
+
+.card-text {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  font: 20px normal;
+}
+
+.card-header {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.card-divider {
+  width: 90%;
+  color: #EEEEEE;
+}
+
+.container {
+  background-color: #922FD4;
+  border: 5px solid black;
+  height: 275px;
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.output {
+  margin: 25px auto;
+  font-size: 20px;
+  color: black;
+}
+
+/*# sourceMappingURL=Game.css.map */
