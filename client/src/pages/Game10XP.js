@@ -1,25 +1,32 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./Game.scss";
 import Logo2 from "../Logo2.png";
+import {FiCheckSquare} from "react-icons/fi";
+import {IconContext} from "react-icons";
 
 function Game10XP() {
-    const [challenges, setChallenges] = useState(["challenge 1", "challenge 1","challenge 2", "challenge 3", "challenge 4", "challenge 5", "challenge 6", "challenge 7", "challenge 8", "challenge 9", "challenge 10",])
-    const [pickedChallenge, setPickedChallenge] = useState(null);
-    const randomGenerate = () => {
-        const randomChallenge = challenges[Math.floor(Math.random() * challenges.length)];
-        setPickedChallenge(randomChallenge);
-    };
+    const [easyChallenges, setEasyChallenges] = useState(["challenge 1", "challenge 1","challenge 2", "challenge 3", "challenge 4", "challenge 5", "challenge 6", "challenge 7", "challenge 8", "challenge 9", "challenge 10",])
+    const [easyPickedChallenge, setEasyPickedChallenge] = useState(null);
+    useEffect(() =>  {
+            const randomChallenge = easyChallenges[Math.floor(Math.random() * easyChallenges.length)];
+            setEasyPickedChallenge(randomChallenge);
+    });
 
     return (
         <div className={"logo-field"}>
             <img src={Logo2}/>
             <div className={"challenge-card"}>
                 <h1 className={"card-header"}>5 minute challenge</h1>
-            {pickedChallenge !== null &&
-            <p className={"card-text"}> {pickedChallenge}</p>}
+            {easyPickedChallenge !== null &&
+            <p id="generate-challenge" className={"card-text"}> {easyPickedChallenge}</p>}
                 <hr className={"card-divider"}/>
                 <p className={"card-text"}>This is your explanation accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel</p>
-                <button onClick={randomGenerate}>generate</button>
+                {/*<button onClick={randomGenerate}>generate</button>*/}
+                {/*<p id={"challenge-generate-field"}/>*/}
+                <br/>
+                <IconContext.Provider value={{ className: 'icon-test'}}>
+                    <FiCheckSquare/>
+                </IconContext.Provider>
             </div>
         </div>
 )}

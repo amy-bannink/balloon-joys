@@ -6,11 +6,13 @@ import '../components/default/main.scss'
 
 function SignUp() {
     const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [password2, setPassword2] = useState('');
     const sendData = () => {
         try {
             axios.post('http://localhost:8081/api/users', {
+                username: username,
                 email: email,
                 password: password
             }).then(response => {
@@ -39,12 +41,20 @@ function SignUp() {
                 <fieldset>
                     <input
                         type={"text"}
+                        placeholder={"Username"}
+                        name={"email"}
+                        id={"email"}
+                        value={username}
+                        onChange={(event) => setUsername(event.target.value)}/>
+                    <input
+                        type={"text"}
                         placeholder={"Email"}
                         name={"email"}
                         id={"email"}
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}/>
-                    <input
+                    <br className={"sign-up-br"}/>
+                        <input
                         type={"password"}
                         placeholder={"Make a password"}
                         name={"password"}
