@@ -75,7 +75,7 @@ function SignUp() {
                     <p>Incorrect email adress</p>}
 
                     <button className={'signUpButton'} onClick={validateData}>SIGN UP</button>
-                    <p>Already have an account? <Link to={"/Login"}>LOG IN HERE</Link></p>
+                    <p>Already have an account? <Link to={"/Login"}>LOG IN HEREeeeeeeeeee</Link></p>
                 </fieldset>
             </label>
         </div>
