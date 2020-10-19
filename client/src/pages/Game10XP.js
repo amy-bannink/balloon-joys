@@ -12,6 +12,12 @@ function Game10XP() {
             setEasyPickedChallenge(randomChallenge);
     });
 
+    const completeChallenge = (e) => {
+        //value optellen (usestate)
+        
+
+    }
+
     return (
         <div className={"logo-field"}>
             <img src={Logo2}/>
@@ -25,7 +31,9 @@ function Game10XP() {
                 {/*<p id={"challenge-generate-field"}/>*/}
                 <br/>
                 <IconContext.Provider value={{ className: 'icon-test'}}>
-                    <FiCheckSquare/>
+                    <FiCheckSquare
+                    value={10}
+                    onClick={}/>
                 </IconContext.Provider>
             </div>
         </div>
