@@ -1,15 +1,17 @@
+$primary-color: #CD0276;
+
 .signUpButton {
   margin-top: 30px;
   height: 50px;
   width: 301px;
   color: white;
-  background-color: #CD0276;
+  background-color: $primary-color;
   border-radius: 20px;
   border: none;
   font-size: 22px;
-}
-.signUpButton:hover {
-  background-color: black;
+  &:hover {
+    background-color: black;
+  }
 }
 
 input {
@@ -32,8 +34,8 @@ input {
   text-align: center;
   position: relative;
   align-self: center;
-}
 
+}
 fieldset {
   background: white;
   border: 0 none;
@@ -45,18 +47,16 @@ fieldset {
   align-self: center;
 }
 
+.sign-up-br {
+  display: block;
+  margin-bottom: 1em;
+}
 img {
   max-width: 70px;
   max-height: 35px;
+  //margin-left: 45%;
   margin-top: 0;
   margin-bottom: 150px;
   position: relative;
   align-self: center;
 }
-
-.sign-up-br {
-  display: block;
-  margin-bottom: 1em;
-}
-
-/*# sourceMappingURL=main.css.map */

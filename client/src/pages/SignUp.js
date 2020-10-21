@@ -2,26 +2,30 @@ import React, { useState } from "react";
 import axios from 'axios';
 import Logo2 from '../Logo2.png'
 import { Link} from "react-router-dom";
-import '../components/default/main.scss'
+import './SignUp.scss';
 
 function SignUp() {
     const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [password2, setPassword2] = useState('');
-    const sendData = () => {
+    const sendData = async (event) => {
+        event.preventDefault()
         try {
             axios.post('http://localhost:8081/api/users', {
                 username: username,
                 email: email,
                 password: password
             }).then(response => {
-                console.log(response);
+                alert("Your sign up was successful. Welcome to Joys!");
+                window.location = 'http://localhost:3000/login'
             })
         } catch(error){
-         alert("Something went wrong. Please try again at a later moment")
+            alert("Something went wrong. Please try again at a later moment")
         }
     };
+    }
+
     const checkPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/;
     const validateData = () => {
         if(password !== password2 || !password.match(checkPassword)){

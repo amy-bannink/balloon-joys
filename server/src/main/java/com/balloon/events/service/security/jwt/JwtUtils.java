@@ -7,7 +7,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
 import com.balloon.events.service.UserDetailsImpl;
-import nl.novi.stuivenberg.springboot.example.security.service.UserDetailsImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,10 +20,10 @@ public class JwtUtils {
     private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
 
     // Deze waardes staan geconfigureerd in application.properties
-    @Value("${novi.sec.jwtSecret}")
+    @Value("${joys.jwtSecret}")
     private String jwtSecret;
 
-    @Value("${novi.sec.jwtExpirationMs}")
+    @Value("${joys.jwtExpirationMs}")
     private int jwtExpirationMs;
 
     public String generateJwtToken(Authentication authentication) {

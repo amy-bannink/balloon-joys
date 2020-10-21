@@ -1,0 +1,62 @@
+.signUpButton {
+  margin-top: 30px;
+  height: 50px;
+  width: 301px;
+  color: white;
+  background-color: #CD0276;
+  border-radius: 20px;
+  border: none;
+  font-size: 22px;
+}
+.signUpButton:hover {
+  background-color: black;
+}
+
+input {
+  margin-top: 3px;
+  border: none;
+  height: 50px;
+  width: 301px;
+  background-color: #DBDBDB;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  font: 20px bold;
+}
+
+#sign-up-form {
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  align-self: center;
+}
+
+fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 30px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  align-self: center;
+}
+
+.sign-up-br {
+  display: block;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 70px;
+  max-height: 35px;
+  margin-top: 0;
+  margin-bottom: 150px;
+  position: relative;
+  align-self: center;
+}
+
+/*# sourceMappingURL=SignUp.css.map */
