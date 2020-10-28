@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
+import Form from './pages/SignUp';
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,7 +12,8 @@ import {
     Game,
     Game10XP,
     Game20XP,
-    Game100XP
+    Game100XP,
+    Welcome
 } from './pages';
 
 import './App.scss';
@@ -44,6 +46,9 @@ function App () {
                     </Route>
                     <Route exact path={"/game100xp"}>
                         <Game100XP/>
+                    </Route>
+                    <Route exact path={"/welcome"}>
+                        <Welcome/>
                     </Route>
                 </Switch>
         </Router>

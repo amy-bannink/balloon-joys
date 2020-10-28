@@ -1,4 +1,4 @@
-import http from './http-common';
+import http from './pages/http-common';
 
 const getAll = async () => {
     return http.get('/users');

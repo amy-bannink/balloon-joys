@@ -1,5 +1,10 @@
 package com.balloon.events.payload.request;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class LoginRequest {
 
     private String username;
@@ -17,7 +22,4 @@ public class LoginRequest {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

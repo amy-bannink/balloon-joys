@@ -1,6 +1,6 @@
 $primary-color: #CD0276;
 
-.signUpButton {
+.sign-up-button {
   margin-top: 30px;
   height: 50px;
   width: 301px;
@@ -11,6 +11,10 @@ $primary-color: #CD0276;
   font-size: 22px;
   &:hover {
     background-color: black;
+  }
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 
@@ -26,17 +30,18 @@ input {
   font: 20px bold;
 }
 
-#sign-up-form {
-  width: 400px;
-  height: 100px;
+.sign-up-form {
+  width: 500px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 150px;
   text-align: center;
   position: relative;
   align-self: center;
 
 }
-fieldset {
+.fieldset {
   background: white;
   border: 0 none;
   border-radius: 10px;

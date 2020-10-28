@@ -3,6 +3,11 @@ import "./Game.scss";
 import Logo2 from "../Logo2.png";
 import {FiCheckSquare} from "react-icons/fi";
 import {IconContext} from "react-icons";
+import PublicIcon from '@material-ui/icons/Public';
+import {RiGitRepositoryPrivateFill} from "react-icons/ri";
+import {AiOutlineFileProtect} from "react-icons/ai";
+import {FcDataProtection} from "react-icons/fc";
+import {FaEye, FaEyeSlash} from "react-icons/fa";
 
 function Game10XP() {
     const [easyChallenges, setEasyChallenges] = useState(["challenge 1", "challenge 1","challenge 2", "challenge 3", "challenge 4", "challenge 5", "challenge 6", "challenge 7", "challenge 8", "challenge 9", "challenge 10",])
@@ -12,11 +17,11 @@ function Game10XP() {
             setEasyPickedChallenge(randomChallenge);
     });
 
-    const completeChallenge = (e) => {
-        //value optellen (usestate)
-        
-
-    }
+    // const completeChallenge = (e) => {
+    //     //value optellen (usestate)
+    //
+    //
+    // }
 
     return (
         <div className={"logo-field"}>
@@ -30,11 +35,18 @@ function Game10XP() {
                 {/*<button onClick={randomGenerate}>generate</button>*/}
                 {/*<p id={"challenge-generate-field"}/>*/}
                 <br/>
-                <IconContext.Provider value={{ className: 'icon-test'}}>
+                <IconContext.Provider value={{ className: 'add-to-challenge'}}>
+                    <FaEye/>
+                </IconContext.Provider>
+                <IconContext.Provider value={{ className: 'icon-challenge'}}>
                     <FiCheckSquare
                     value={10}
-                    onClick={}/>
+                    />
                 </IconContext.Provider>
+                <IconContext.Provider value={{ className: 'add-to-challenge'}}>
+                    <FaEyeSlash/>
+                </IconContext.Provider>
+
             </div>
         </div>
 )}

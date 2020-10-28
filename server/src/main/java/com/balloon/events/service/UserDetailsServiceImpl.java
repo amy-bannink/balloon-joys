@@ -3,6 +3,7 @@ package com.balloon.events.service;
 import com.balloon.events.domain.User;
 import com.balloon.events.repository.UserRepository;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

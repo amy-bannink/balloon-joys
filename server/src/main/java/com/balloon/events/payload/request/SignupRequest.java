@@ -1,10 +1,15 @@
 package com.balloon.events.payload.request;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Set;
 
+@Getter
+@Setter
 public class SignupRequest {
 
     @NotBlank
@@ -34,16 +39,8 @@ public class SignupRequest {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPassword() {
         return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public Set<String> getRole() {

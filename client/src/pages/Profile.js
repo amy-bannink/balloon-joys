@@ -1,12 +1,14 @@
 import React from "react";
 
-const Profile = () => {
-    const logInOnClick  = () => {
-    };
+function Profile() {
+
     return(
         <div>
-            <h1>profile</h1>
-            {/*<Button buttonType="default" label="Ik ben een default button" clickHandler={logInOnClick} />*/}
+        {/* profile image uploaden */}
+        {/* display username and email*/}
+        {/*display XP progress bar*/}
+        {/*display public challenge list*/}
+
         </div>
     )
 }

@@ -9,7 +9,6 @@ img {
 .game-field {
   align-content: center;
   margin-top: 0px;
-  margin-left: 404px;
   position: relative;
 }
 
@@ -41,8 +40,8 @@ br {
   margin-top: 80px;
   margin-left: 650px;
   position: relative;
-  width: 640px;
-  height: 400px;
+  max-width: 640px;
+  max-height: 450px;
   border-radius: 10px;
   box-shadow: 0 0 15px 1px black;
   text-align: center;
@@ -71,30 +70,37 @@ br {
   color: #EEEEEE;
 }
 
-.container {
-  background-color: #922FD4;
-  border: 5px solid black;
-  height: 275px;
-  width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .output {
   margin: 25px auto;
   font-size: 20px;
   color: black;
 }
 
-.icon-test {
-  margin-bottom: 2px;
+.icon-challenge {
   height: 2em;
   width: 2em;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 40px;
 }
-.icon-test:hover {
+.icon-challenge:hover {
   height: 3em;
   width: 3em;
   color: limegreen;
+  line-height: 30px;
+}
+
+.add-to-challenge {
+  height: 2em;
+  width: 2em;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+.add-to-challenge:hover {
+  height: 3em;
+  width: 3em;
+  color: #922FD4;
   line-height: 30px;
 }
 

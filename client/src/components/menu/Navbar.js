@@ -23,7 +23,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import Logo2 from "../../Logo2.png";
 import Typography from "@material-ui/core/Typography";
 import index from "styled-components/dist/styled-components-macro.esm";
-
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
 
 const drawerWidth = 240;
 
@@ -108,6 +108,8 @@ export default function PersistentDrawerLeft() {
                 return <ExitToAppIcon />;
             case 'Home':
                 return <HomeIcon />;
+            case 'Profile':
+                return <AccountBoxIcon/>;
             default:
                 return <PersonAddIcon />;
 
@@ -128,8 +130,14 @@ export default function PersistentDrawerLeft() {
         {
             name: 'Home',
             destinationUrl: '/',
-            id: 2,
+            id: 3,
         },
+        {
+            name: 'Profile',
+            destinationUrl: '/profile',
+            id: 4,
+
+        }
     ];
 
 
