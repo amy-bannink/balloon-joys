@@ -6,6 +6,7 @@ import Game10XP from "./Game10XP";
 import Game20XP from "./Game20XP";
 import Game100XP from "./Game100XP";
 import Welcome from "./Welcome";
+import Profile2 from "../components/Profile2";
 
 export {
     SignUp,
@@ -15,5 +16,6 @@ export {
     Game10XP,
     Game20XP,
     Game100XP,
-    Welcome
+    Welcome,
+    Profile2,
 }

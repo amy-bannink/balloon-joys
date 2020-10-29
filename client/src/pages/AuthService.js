@@ -8,29 +8,32 @@ const register = (username, email, password) => {
     });
 }
 
-// const getCurrentUser= () => {
-//     return JSON.parse(localStorage.getItem('user'));
-// }
+const getCurrentUser= () => {
+    return JSON.parse(localStorage.getItem('user'));
+}
 
-// const logout = () => {
-//     localStorage.removeItem('user');
-// }
+const logout = () => {
+    localStorage.removeItem('user');
+}
 
-// const login = async (username, password) => {
-//     return http.post('/auth/login', {
-//         username,
-//         password,
-//
-//     })
-//         .then(response => {
-//             if (response.data.accessToken) {
-//                 localStorage.setItem('user', JSON.stringify(response.data));
-//             }
-//
-//             return response.data;
-//         });
-// }
+const login = async (username, password) => {
+    return http.post('/auth/login', {
+        username,
+        password,
+
+    })
+        .then(response => {
+            if (response.data.accessToken) {
+                localStorage.setItem('user', JSON.stringify(response.data));
+            }
+
+            return response.data;
+        });
+}
 
 export default {
+    login,
+    logout,
     register,
+    getCurrentUser
 }

@@ -13,7 +13,8 @@ import {
     Game10XP,
     Game20XP,
     Game100XP,
-    Welcome
+    Welcome,
+    Profile2,
 } from './pages';
 
 import './App.scss';
@@ -49,6 +50,9 @@ function App () {
                     </Route>
                     <Route exact path={"/welcome"}>
                         <Welcome/>
+                    </Route>
+                    <Route exact path={"/profile2"}>
+                        <Profile2/>
                     </Route>
                 </Switch>
         </Router>

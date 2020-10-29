@@ -8,7 +8,8 @@ img {
 
 .game-field {
   align-content: center;
-  margin-top: 0px;
+  margin-top: 50px;
+  margin-left: 404px;
   position: relative;
 }
 
@@ -68,6 +69,15 @@ br {
 .card-divider {
   width: 90%;
   color: #EEEEEE;
+}
+
+.container {
+  background-color: #922FD4;
+  border: 5px solid black;
+  height: 275px;
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .output {

@@ -3,7 +3,7 @@ import * as yup from "yup";
 import { useFormik } from "formik";
 import './SignUp.scss';
 import FormField from "./SignUpFormField";
-import AuthService from "./AuthService";
+import register from "./AuthService";
 
 function SignUp() {
     // const [email, setEmail] = useState('');
@@ -112,8 +112,8 @@ function SignUp() {
             {formik.touched.confirmPassword && formik.errors.confirmPassword ? (
                 <div>{formik.errors.confirmPassword}</div>
             ) : null}
-
-            <button className={"sign-up-button"} type="submit" disabled={!(formik.isValid && formik.dirty)}>Submit</button>
+{/*sign up post request */}
+            <button className={"sign-up-button"} onSubmit={register} type="submit" disabled={!(formik.isValid && formik.dirty)}>Submit</button>
 
             </div>
         </form>

@@ -12,8 +12,8 @@ img {
 
 .game-field {
   align-content: center;
-  margin-top: 0px;
-  //margin-left: 404px;
+  margin-top: 50px;
+  margin-left: 404px;
   position: relative;
 }
 .game-button {
@@ -74,14 +74,14 @@ br {
   color: #EEEEEE;
 }
 
-//.container {
-//  background-color: #922FD4;
-//  border: 5px solid black;
-//  height: 275px;
-//  width: 750px;
-//  margin: 0 auto;
-//  text-align: center;
-//}
+.container {
+  background-color: #922FD4;
+  border: 5px solid black;
+  height: 275px;
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .output {
   margin: 25px auto;

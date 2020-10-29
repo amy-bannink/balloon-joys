@@ -10,9 +10,9 @@ function Login(){
     return (
         <>
             <img src={Logo2}/>
-        <div id="sign-up-form">
+        <div className="sign-up-form">
             <label htmlFor={"Login"}>
-                <fieldset>
+                <div className={"fieldset"}>
                     <input
                         type={"text"}
                         placeholder={"Email"}
@@ -27,9 +27,9 @@ function Login(){
                         id={"password"}
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}/>
-                    <button className={'signUpButton'}>LOG IN</button>
+                    <button className={'sign-up-button'}>LOG IN</button>
                     <p>Don't have an account yet? <Link to={"/sign-up"}>SIGN UP HERE</Link></p>
-                </fieldset>
+                </div>
             </label>
         </div>
             </>
